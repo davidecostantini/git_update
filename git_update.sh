@@ -8,7 +8,6 @@ print_msg() {
       "cyan" )
           msg="\e[1;36m $2" ;;
   esac  
-    #echo -e "\e[1;31m This is red text \e[0m"
     echo -e "$msg \e[0m"
 }
 
