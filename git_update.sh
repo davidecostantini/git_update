@@ -7,8 +7,10 @@ print_msg() {
           msg="\e[1;32m $2" ;;
       "cyan" )
           msg="\e[1;36m $2" ;;
+      *) 
+          msg="\e[1;37m $2" ;;          
   esac  
-    echo -e "$msg \e[0m"
+  echo -e "$msg \e[0m"
 }
 
 branch_name=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
